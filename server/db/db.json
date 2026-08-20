@@ -1,0 +1,163 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "John Doe",
+      "email": "patient@example.com",
+      "password": "$2a$10$wIlofkhxIBZl220u9cCqYufUe73JnfN7yE87pgEzc6o8h5tZ4YSBq",
+      "role": "patient"
+    },
+    {
+      "id": "u2",
+      "name": "Dr. Elizabeth Blackwell",
+      "email": "doctor@example.com",
+      "password": "$2a$10$wIlofkhxIBZl220u9cCqYufUe73JnfN7yE87pgEzc6o8h5tZ4YSBq",
+      "role": "doctor"
+    },
+    {
+      "id": "u3",
+      "name": "Dr. Gregory House",
+      "email": "house@example.com",
+      "password": "$2a$10$wIlofkhxIBZl220u9cCqYufUe73JnfN7yE87pgEzc6o8h5tZ4YSBq",
+      "role": "doctor"
+    },
+    {
+      "id": "u4",
+      "name": "Platform Admin",
+      "email": "admin@example.com",
+      "password": "$2a$10$wIlofkhxIBZl220u9cCqYufUe73JnfN7yE87pgEzc6o8h5tZ4YSBq",
+      "role": "admin"
+    },
+    {
+      "id": "u_1787198342037",
+      "name": "Piyush",
+      "email": "piyush@gmail.com",
+      "password": "$2a$10$QD867m5Wg/Xjozvg.RzPp.dqGS2fBTaXxpbaFaWQjQmpRYw051J/a",
+      "role": "patient"
+    },
+    {
+      "id": "u_1787198436550",
+      "name": "Shubham",
+      "email": "shubham@gmail.com",
+      "password": "$2a$10$Flio5G0HHg6mbexTcv6EVuNqx0voz8sTGy5a4xqHI9SiVYwWJy88a",
+      "role": "doctor"
+    }
+  ],
+  "doctors": [
+    {
+      "id": "d1",
+      "userId": "u2",
+      "name": "Dr. Elizabeth Blackwell",
+      "specialization": "Cardiology",
+      "experience": 12,
+      "fee": 120,
+      "rating": 4.9,
+      "bio": "Pioneer in cardiovascular wellness and preventive cardiology with over a decade of research and clinical excellence.",
+      "availableSlots": [
+        {
+          "id": "slot1",
+          "date": "2026-08-25",
+          "time": "09:00 AM",
+          "isBooked": true
+        },
+        {
+          "id": "slot2",
+          "date": "2026-08-25",
+          "time": "10:00 AM",
+          "isBooked": true
+        },
+        {
+          "id": "slot3",
+          "date": "2026-08-25",
+          "time": "02:00 PM",
+          "isBooked": false
+        },
+        {
+          "id": "slot4",
+          "date": "2026-08-26",
+          "time": "11:00 AM",
+          "isBooked": false
+        }
+      ]
+    },
+    {
+      "id": "d2",
+      "userId": "u3",
+      "name": "Dr. Gregory House",
+      "specialization": "Neurology",
+      "experience": 18,
+      "fee": 200,
+      "rating": 4.7,
+      "bio": "Specialist in diagnostic mysteries, infectious diseases, and complex neurological cases. High-resolution diagnostics and detailed analysis.",
+      "availableSlots": [
+        {
+          "id": "slot5",
+          "date": "2026-08-25",
+          "time": "11:00 AM",
+          "isBooked": false
+        },
+        {
+          "id": "slot6",
+          "date": "2026-08-25",
+          "time": "01:00 PM",
+          "isBooked": false
+        }
+      ]
+    },
+    {
+      "id": "d_1787198436550",
+      "userId": "u_1787198436550",
+      "name": "Shubham",
+      "specialization": "General Medicine",
+      "experience": 3,
+      "fee": 1000,
+      "rating": 5,
+      "bio": "Hi, I am Dr. Shubham, specializing in General Medicine.",
+      "availableSlots": [
+        {
+          "id": "slot_1787198483118_xrs94",
+          "date": "2026-08-21",
+          "time": "09:00 AM",
+          "isBooked": true
+        }
+      ]
+    }
+  ],
+  "appointments": [
+    {
+      "id": "a1",
+      "patientId": "u1",
+      "doctorId": "d1",
+      "patientName": "John Doe",
+      "doctorName": "Dr. Elizabeth Blackwell",
+      "specialization": "Cardiology",
+      "date": "2026-08-25",
+      "timeSlot": "09:00 AM",
+      "status": "pending"
+    },
+    {
+      "id": "a_1787198371742_jacvw",
+      "patientId": "u_1787198342037",
+      "patientName": "Piyush",
+      "doctorId": "d1",
+      "doctorName": "Dr. Elizabeth Blackwell",
+      "specialization": "Cardiology",
+      "date": "2026-08-25",
+      "timeSlot": "10:00 AM",
+      "slotId": "slot2",
+      "status": "pending"
+    },
+    {
+      "id": "a_1787198503719_ozrx6",
+      "patientId": "u_1787198342037",
+      "patientName": "Piyush",
+      "doctorId": "d_1787198436550",
+      "doctorName": "Shubham",
+      "specialization": "General Medicine",
+      "date": "2026-08-21",
+      "timeSlot": "09:00 AM",
+      "slotId": "slot_1787198483118_xrs94",
+      "status": "confirmed"
+    }
+  ]
+}
