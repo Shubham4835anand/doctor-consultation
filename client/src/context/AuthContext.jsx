@@ -5,7 +5,7 @@ const AuthContext = createContext();
 
 // Configure base URL for our backend API
 // axios.defaults.baseURL = 'http://localhost:5000';
-axios.defaults.baseURL = 'https://vercel.com/shubham4835anands-projects/doctor-consultation-2pdi/FDGDfmkdaKmH9qLPr8yTScA5tn8u';
+axios.defaults.baseURL = 'https://doctor-consultation-2pdi.vercel.app/api';
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
