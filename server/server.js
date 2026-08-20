@@ -58,6 +58,6 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
   console.log(`===================================================`);
   console.log(`🚀 Server running on port ${PORT}`);
-  console.log(`Health check: http://localhost:${PORT}/api/status`);
+  console.log(`Health check: https://doctor-consultation-2pdi.vercel.app/api/status`);
   console.log(`===================================================`);
 });

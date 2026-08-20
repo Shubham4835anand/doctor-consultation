@@ -4,7 +4,8 @@ import axios from 'axios';
 const AuthContext = createContext();
 
 // Configure base URL for our backend API
-axios.defaults.baseURL = 'http://localhost:5000';
+// axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = 'https://vercel.com/shubham4835anands-projects/doctor-consultation-2pdi/FDGDfmkdaKmH9qLPr8yTScA5tn8u';
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
@@ -27,7 +28,7 @@ export function AuthProvider({ children }) {
     const loadSavedSession = () => {
       const savedToken = localStorage.getItem('token');
       const savedUser = localStorage.getItem('user');
-      
+
       if (savedToken && savedUser) {
         try {
           setUser(JSON.parse(savedUser));
@@ -51,7 +52,7 @@ export function AuthProvider({ children }) {
     try {
       const response = await axios.post('/api/auth/login', { email, password });
       const { token: receivedToken, user: receivedUser } = response.data;
-      
+
       setUser(receivedUser);
       setToken(receivedToken);
       localStorage.setItem('user', JSON.stringify(receivedUser));
