@@ -1,5 +1,12 @@
 # Doctor Consultation Booking Application
 
+🚀 **Live Production Deployment**: [https://doctor-consultation-mauve.vercel.app/](https://doctor-consultation-mauve.vercel.app/)  
+🔍 **Google Site Verification Token**: [google59469c698231ff6a.html](https://doctor-consultation-mauve.vercel.app/google59469c698231ff6a.html)  
+🗺️ **XML Sitemap**: [https://doctor-consultation-mauve.vercel.app/sitemap.xml](https://doctor-consultation-mauve.vercel.app/sitemap.xml)  
+🤖 **Robots Protocol**: [https://doctor-consultation-mauve.vercel.app/robots.txt](https://doctor-consultation-mauve.vercel.app/robots.txt)
+
+---
+
 A responsive, premium full-stack Doctor Consultation Booking application built using **React** (Vite + Tailwind CSS v4) on the frontend, **Node.js & Express** on the backend, and a file-based **JSON database** for persistence.
 
 ## Key Features
